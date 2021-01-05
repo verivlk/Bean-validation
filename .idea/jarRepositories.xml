@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="github" />
+      <option name="name" value="GitHub VeriVlk Apache Maven Packages" />
+      <option name="url" value="https://maven.pkg.github.com/verivlk/jokes-maven-plugin" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="central" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="ca7e4fd4-9c8b-4942-8d98-409403d88fc5" />
+      <option name="name" value="ca7e4fd4-9c8b-4942-8d98-409403d88fc5" />
+      <option name="url" value="http://maven.icm.edu.pl/artifactory/repo/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="c2c7f970-638c-4fe6-829e-7a31f8b4e3cc" />
+      <option name="name" value="c2c7f970-638c-4fe6-829e-7a31f8b4e3cc" />
+      <option name="url" value="https://mvnrepository.com" />
+    </remote-repository>
+  </component>
+</project>
