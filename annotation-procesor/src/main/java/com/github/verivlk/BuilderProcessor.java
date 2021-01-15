@@ -22,7 +22,7 @@ public class BuilderProcessor extends AbstractProcessor {
         for (TypeElement annotation : annotations) {
             Set<? extends Element> annotatedElements = roundEnv.getElementsAnnotatedWith(annotation);
             System.out.println("anotace");
-            System.out.println(annotation.toString());
+            System.out.println(annotatedElements.toString());
             // …
         }
 
