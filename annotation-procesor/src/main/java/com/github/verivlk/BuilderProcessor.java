@@ -1,7 +1,7 @@
 package com.github.verivlk;
 
 
-import com.google.auto.service.AutoService;
+//import com.google.auto.service.AutoService;
 
 import javax.annotation.processing.*;
 import javax.lang.model.SourceVersion;
@@ -12,8 +12,8 @@ import java.util.Set;
 
 @SupportedAnnotationTypes(
         "javax.validation.Valid")
-@SupportedSourceVersion(SourceVersion.RELEASE_8)
-@AutoService(Processor.class)
+@SupportedSourceVersion(SourceVersion.RELEASE_11)
+//@AutoService(Processor.class)
 public class BuilderProcessor extends AbstractProcessor {
 
   /*  @Override
@@ -34,9 +34,10 @@ public class BuilderProcessor extends AbstractProcessor {
    */
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
+        processingEnv.getMessager().printMessage(Diagnostic.Kind.NOTE, "spusten proces");
         for ( TypeElement annotation : annotations ) {
             for ( Element element : roundEnv.getElementsAnnotatedWith(annotation) ) {
-                processingEnv.getMessager().printMessage(Diagnostic.Kind.NOTE, "found @Log at " + element);
+                processingEnv.getMessager().printMessage(Diagnostic.Kind.NOTE, "found bean validation (@Valid) at " + element);
             }
         }
         return true;

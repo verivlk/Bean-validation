@@ -20,6 +20,7 @@ public class Application {
             User user2 = new User("Jenny", "jenny@domain.com");
             userRepository.save(user1);
             userRepository.save(user2);
+
             userRepository.findAll().forEach(System.out::println);
 
         };
