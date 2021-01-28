@@ -34,6 +34,7 @@ public class UserController {
             String errorMessage = error.getDefaultMessage();
             errors.put(fieldName, errorMessage);
         });
+
         return errors;
     }
 }

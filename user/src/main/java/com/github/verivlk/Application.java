@@ -6,9 +6,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import javax.inject.Inject;
+
 @SpringBootApplication
 public class Application {
 
+    @Inject
+    JokesRepository jokesRepository;
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
@@ -22,7 +26,7 @@ public class Application {
             userRepository.save(user2);
 
             userRepository.findAll().forEach(System.out::println);
-
+            System.out.println(jokesRepository.getRandomJoke());
         };
     }
 }

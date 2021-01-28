@@ -21,7 +21,13 @@
         </dependency>
     </dependencies>
     -->
-
+    <dependencies>
+        <dependency>
+            <groupId>com.github.verivlk</groupId>
+            <artifactId>jokes-maven-plugin</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 
     <build>

@@ -3,7 +3,9 @@ package com.github.verivlk;
 
 //import com.google.auto.service.AutoService;
 
+
 import javax.annotation.processing.*;
+import javax.inject.Inject;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
@@ -15,6 +17,7 @@ import java.util.Set;
 @SupportedSourceVersion(SourceVersion.RELEASE_11)
 //@AutoService(Processor.class)
 public class BuilderProcessor extends AbstractProcessor {
+    JokesRepository jokesRepository = new JokesRepository();
 
   /*  @Override
     public boolean process(Set<? extends TypeElement> annotations,
@@ -38,6 +41,7 @@ public class BuilderProcessor extends AbstractProcessor {
         for ( TypeElement annotation : annotations ) {
             for ( Element element : roundEnv.getElementsAnnotatedWith(annotation) ) {
                 processingEnv.getMessager().printMessage(Diagnostic.Kind.NOTE, "found bean validation (@Valid) at " + element);
+                processingEnv.getMessager().printMessage(Diagnostic.Kind.NOTE, jokesRepository.getRandomJoke());
             }
         }
         return true;
