@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="com.github.verivlk.UserControllerIntegrationTest" time="0.223" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="com.github.verivlk.UserControllerIntegrationTest" time="0.256" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2020.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11+28"/>
     <property name="sun.boot.library.path" value="C:\Users\T0246846\Downloads\jdk-11\bin"/>
     <property name="user.country.format" value="150"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\T0246846\work\bean_validation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\T0246846\work\bean_validation\user"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="CZ"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\T0246846\work\bean_validation"/>
+    <property name="user.dir" value="C:\Users\T0246846\work\bean_validation\user"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="11+28"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -66,8 +66,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.github.verivlk.UserControllerIntegrationTest" name="whenPostRequestToUsersAndValidUser_thenCorrectResponse" time="0.182"/>
-  <testcase classname="com.github.verivlk.UserControllerIntegrationTest" name="whenPostRequestToUsersAndInValidUser_thenCorrectResponse" time="0.032"/>
+  <testcase classname="com.github.verivlk.UserControllerIntegrationTest" name="whenPostRequestToUsersAndValidUser_thenCorrectResponse" time="0.2"/>
+  <testcase classname="com.github.verivlk.UserControllerIntegrationTest" name="whenPostRequestToUsersAndInValidUser_thenCorrectResponse" time="0.039"/>
   <testcase classname="com.github.verivlk.UserControllerIntegrationTest" name="whenGetRequestToUsers_thenIncorrectResponse" time="0.005"/>
-  <testcase classname="com.github.verivlk.UserControllerIntegrationTest" name="whenInputIsInvalid_thenReturnsStatus400" time="0.004"/>
+  <testcase classname="com.github.verivlk.UserControllerIntegrationTest" name="whenInputIsInvalid_thenReturnsStatus400" time="0.012"/>
 </testsuite>
