@@ -121,28 +121,31 @@
                         <showWarnings>true</showWarnings>
                     </configuration>
                 </plugin>
-          <!--  <plugin>
+
+            <plugin>
                 <groupId>com.github.verivlk</groupId>
                 <artifactId>jokes-maven-plugin</artifactId>
                 <version>1.0-SNAPSHOT</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>joke</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>pokus</id>
-                        <configuration>
-                            <scanPackage>com.github.verivlk</scanPackage>
-                        </configuration>
-                        <goals>
-                            <goal>joke_pokus</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                  <executions>
+                      <execution>
+                          <goals>
+                              <goal>joke</goal>
+                          </goals>
+                      </execution>
+                  </executions>
+                <configuration>
+                    <annotationProcessorPaths>
+                    <path>
+                        <groupId>com.github.verivlk</groupId>
+                        <artifactId>annotation-procesor</artifactId>
+                        <version>1.0-SNAPSHOT</version>
+                    </path>
+                    </annotationProcessorPaths>
+                    <annotationProcessors>
+                        <annotationProcessor>com.github.verivlk.BuilderProcessor</annotationProcessor>
+                    </annotationProcessors>
+                </configuration>
             </plugin>
-            -->
         </plugins>
     </build>
 
