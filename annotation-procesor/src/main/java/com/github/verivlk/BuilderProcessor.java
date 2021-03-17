@@ -41,7 +41,7 @@ public class BuilderProcessor extends AbstractProcessor {
         for ( TypeElement annotation : annotations ) {
             for ( Element element : roundEnv.getElementsAnnotatedWith(annotation) ) {
                 processingEnv.getMessager().printMessage(Diagnostic.Kind.NOTE, "found bean validation (@Valid) at " + element);
-                processingEnv.getMessager().printMessage(Diagnostic.Kind.NOTE, jokesRepository.getRandomJoke());
+                     processingEnv.getMessager().printMessage(Diagnostic.Kind.NOTE, jokesRepository.getRandomJoke());
             }
         }
         return true;
